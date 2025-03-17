@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import base.Baseclass;
 import pageobjects.Login;
+
 public class Logintest extends Baseclass {
 	@Test
 	public void Login() throws IOException {
@@ -17,11 +18,11 @@ public class Logintest extends Baseclass {
 		lu.getLogInbtn();
 		takeScreenshot("Login");
 }
+
 	@BeforeTest
-public void Setup() throws IOException {
+	public void Setup() throws IOException {
 		readfrompropfile();
-	
-}
-   
+
+	} 
 
 }

@@ -7,11 +7,14 @@ import utilities.utilities;
 public class Baseclass extends utilities{
 	
 		@BeforeMethod
-		public void beforeclass() throws IOException {
-		
+		public void Startup() throws IOException {
 			browsercofigchrome();
+			readfrompropfile();
 			takeScreenshot("Website Launch");
 		}
+		
+		
+		
 		@AfterMethod
 		public void afterclass() {
 			driver.quit();

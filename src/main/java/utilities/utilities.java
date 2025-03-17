@@ -26,7 +26,7 @@ public class utilities {
 	}
 		public static void browsercofigchrome() {	
            WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
+			driver = new ChromeDriver();
 			driver.get("https://www.demoblaze.com");
             driver.manage().window().maximize();
 		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));  
@@ -49,11 +49,12 @@ public static void refresh()
 {
 	driver.navigate().refresh();
 }
-	public static void takeScreenshot(String name) throws IOException {
+	public static String takeScreenshot(String name) throws IOException {
 		TakesScreenshot screenshot=(TakesScreenshot) driver;
 		File src=screenshot.getScreenshotAs(OutputType.FILE);
 		File dest=new File("C:\\Users\\wel come\\eclipse-workspace\\Demoblaze\\Screenshot"+name+".jpg");
 		FileUtils.copyFile(src, dest);
+		return name;
 			
 	}
 }

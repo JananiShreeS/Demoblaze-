@@ -9,15 +9,10 @@ public class Signup {
 	
 
 		public WebDriver driver;
-
-
 		public Signup(WebDriver driver) {
 			this.driver=driver;
 		PageFactory.initElements(driver,this);
 		}
-		
-	
-
 	@FindBy(xpath="//a[@id='signin2']")
 	WebElement Signup;
 
@@ -29,7 +24,6 @@ public class Signup {
 
 	@FindBy(xpath="//button[@onclick='register()']")
 	WebElement Signupbtn;
-
 
 	public WebDriver getDriver() {
 		return driver;

@@ -2,7 +2,6 @@ package Testcases;
 
 import java.io.IOException;
 
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import base.Baseclass;
@@ -16,8 +15,5 @@ public void Logout() throws IOException {
 	lo.getLogout();
 	takeScreenshot("Logout");
 }
-@AfterMethod
-public void close() {
-    driver.quit(); 
-}
+
 }

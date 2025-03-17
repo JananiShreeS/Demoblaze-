@@ -3,29 +3,21 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Testcases.orderplace">
-        <methods>
-          <include name="Setup"/>
-          <include name="Orderplace"/>
-          <include name="beforeclass"/>
-          <include name="afterclass"/>
-        </methods>
-      </class> <!-- Testcases.orderplace -->
       <class name="Testcases.Logouttest">
         <methods>
           <include name="Logout"/>
-          <include name="beforeclass"/>
-          <include name="close"/>
+          <include name="Startup"/>
           <include name="afterclass"/>
         </methods>
       </class> <!-- Testcases.Logouttest -->
-      <class name="Testcases.Alerttest">
+      <class name="Testcases.Logintest">
         <methods>
-          <include name="beforeclass"/>
-          <include name="acceptAlert"/>
+          <include name="Setup"/>
+          <include name="Login"/>
+          <include name="Startup"/>
           <include name="afterclass"/>
         </methods>
-      </class> <!-- Testcases.Alerttest -->
+      </class> <!-- Testcases.Logintest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
